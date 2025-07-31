@@ -86,7 +86,7 @@ const Index = () => {
                 </SelectTrigger>
                 <SelectContent>
                   <SelectItem value="sedan">Седан</SelectItem>
-                  <SelectItem value="suv">SUV</SelectItem>
+                  <SelectItem value="crossover">Кроссовер</SelectItem>
                   <SelectItem value="hatchback">Хэтчбек</SelectItem>
                 </SelectContent>
               </Select>
