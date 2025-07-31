@@ -20,7 +20,7 @@ const Index = () => {
       engine: '3.0L',
       power: '340 л.с.',
       fuel: '9.8 л/100км',
-      image: '/img/10d2b38e-a2f6-47c5-b34f-deddf4e52ac1.jpg',
+      image: 'https://cdn.poehali.dev/files/80cbf593-3dea-430c-b439-044ce9c5b8cf.png',
       type: 'Кроссовер'
     },
     {
