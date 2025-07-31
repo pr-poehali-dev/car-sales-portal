@@ -21,7 +21,7 @@ const Index = () => {
       power: '340 л.с.',
       fuel: '9.8 л/100км',
       image: '/img/10d2b38e-a2f6-47c5-b34f-deddf4e52ac1.jpg',
-      type: 'SUV'
+      type: 'Кроссовер'
     },
     {
       id: 2,
@@ -43,7 +43,7 @@ const Index = () => {
       power: '258 л.с.',
       fuel: '8.5 л/100км',
       image: '/img/eb873272-c17f-4c00-bdcb-b377ea561b08.jpg',
-      type: 'SUV'
+      type: 'Кроссовер'
     }
   ];
 
