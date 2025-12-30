@@ -25,25 +25,25 @@ const Index = () => {
     },
     {
       id: 2,
-      name: 'Audi A6',
-      price: '3,200,000',
+      name: 'Lada Granta',
+      price: '850,000',
       year: 2024,
-      engine: '2.0L',
-      power: '245 л.с.',
-      fuel: '7.2 л/100км',
-      image: '/img/1fa3a355-cad3-4f8c-a654-4bb47f321142.jpg',
+      engine: '1.6L',
+      power: '106 л.с.',
+      fuel: '6.8 л/100км',
+      image: 'https://cdn.poehali.dev/files/granta.png',
       type: 'Седан'
     },
     {
       id: 3,
-      name: 'Mercedes GLC',
-      price: '5,100,000',
+      name: 'Lada Vesta',
+      price: '1,200,000',
       year: 2024,
-      engine: '2.0L',
-      power: '258 л.с.',
-      fuel: '8.5 л/100км',
-      image: '/img/eb873272-c17f-4c00-bdcb-b377ea561b08.jpg',
-      type: 'Кроссовер'
+      engine: '1.8L',
+      power: '122 л.с.',
+      fuel: '7.1 л/100км',
+      image: 'https://cdn.poehali.dev/files/vesta.png',
+      type: 'Седан'
     }
   ];
 
@@ -102,7 +102,7 @@ const Index = () => {
       {/* Main Content */}
       <div className="container mx-auto px-4 py-12">
         <Tabs defaultValue="catalog" className="w-full">
-          <TabsList className="grid w-full grid-cols-3 mb-8">
+          <TabsList className="grid w-full grid-cols-2 mb-8">
             <TabsTrigger value="catalog" className="text-lg">
               <Icon name="Car" size={20} className="mr-2" />
               Каталог
@@ -110,10 +110,6 @@ const Index = () => {
             <TabsTrigger value="comparison" className="text-lg">
               <Icon name="BarChart3" size={20} className="mr-2" />
               Сравнение
-            </TabsTrigger>
-            <TabsTrigger value="credit" className="text-lg">
-              <Icon name="Calculator" size={20} className="mr-2" />
-              Кредит
             </TabsTrigger>
           </TabsList>
 
@@ -260,69 +256,7 @@ const Index = () => {
             )}
           </TabsContent>
 
-          {/* Credit Tab */}
-          <TabsContent value="credit" className="space-y-8">
-            <div className="text-center mb-8">
-              <h2 className="text-4xl font-bold text-gray-800 mb-4">Кредитный калькулятор</h2>
-              <p className="text-gray-600">Рассчитайте ежемесячный платеж</p>
-            </div>
 
-            <div className="grid lg:grid-cols-2 gap-8">
-              <Card className="p-6">
-                <CardHeader>
-                  <CardTitle>Параметры кредита</CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-6">
-                  <div>
-                    <label className="block text-sm font-medium mb-2">Стоимость автомобиля</label>
-                    <Input placeholder="3,000,000 ₽" />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium mb-2">Первоначальный взнос</label>
-                    <Input placeholder="600,000 ₽" />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium mb-2">Срок кредита</label>
-                    <Select>
-                      <SelectTrigger>
-                        <SelectValue placeholder="Выберите срок" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="12">1 год</SelectItem>
-                        <SelectItem value="24">2 года</SelectItem>
-                        <SelectItem value="36">3 года</SelectItem>
-                        <SelectItem value="60">5 лет</SelectItem>
-                      </SelectContent>
-                    </Select>
-                  </div>
-                  <Button className="w-full bg-secondary hover:bg-secondary/90">
-                    <Icon name="Calculator" size={20} className="mr-2" />
-                    Рассчитать
-                  </Button>
-                </CardContent>
-              </Card>
-
-              <Card className="p-6 bg-gradient-to-br from-primary/5 to-secondary/5">
-                <CardHeader>
-                  <CardTitle>Результат расчета</CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <div className="bg-white rounded-lg p-4 shadow-sm">
-                    <div className="text-sm text-gray-600">Ежемесячный платеж</div>
-                    <div className="text-3xl font-bold text-primary">45,200 ₽</div>
-                  </div>
-                  <div className="bg-white rounded-lg p-4 shadow-sm">
-                    <div className="text-sm text-gray-600">Переплата</div>
-                    <div className="text-xl font-semibold">324,000 ₽</div>
-                  </div>
-                  <div className="bg-white rounded-lg p-4 shadow-sm">
-                    <div className="text-sm text-gray-600">Общая сумма</div>
-                    <div className="text-xl font-semibold">3,324,000 ₽</div>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-          </TabsContent>
         </Tabs>
 
         {/* Contact Section */}
