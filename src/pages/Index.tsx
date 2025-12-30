@@ -66,7 +66,7 @@ const Index = () => {
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="relative container mx-auto text-center">
           <h1 className="text-6xl font-bold mb-6 animate-fade-in">
-            АВТО<span className="text-yellow-300">САЛОН</span>
+            ГАРАНТ<span className="text-yellow-300">АВТО</span>
           </h1>
           <p className="text-xl mb-8 opacity-90">
             Найдите автомобиль мечты среди премиальных моделей
@@ -175,14 +175,7 @@ const Index = () => {
                       </div>
                     </div>
                     
-                    <div className="mt-6 space-y-2">
-                      <Button className="w-full bg-primary hover:bg-primary/90">
-                        Подробнее
-                      </Button>
-                      <Button variant="outline" className="w-full">
-                        Тест-драйв
-                      </Button>
-                    </div>
+
                   </CardContent>
                 </Card>
               ))}
